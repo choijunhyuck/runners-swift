@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Safety Controller-->
+        <scene sceneID="xGN-RR-mgx">
+            <objects>
+                <viewController storyboardIdentifier="SafetyController" id="lHo-ip-hok" customClass="SafetyController" customModule="runners" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qlM-9n-O3e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_screen_night" translatesAutoresizingMaskIntoConstraints="NO" id="tzP-jc-1TJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="safe_frame_asset_text_1" translatesAutoresizingMaskIntoConstraints="NO" id="c8P-5t-7bo">
+                                <rect key="frame" x="102" y="121" width="171" height="51"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbb-J3-i7v">
+                                <rect key="frame" x="173" y="536" width="30" height="30"/>
+                                <state key="normal" title="닫기"/>
+                                <connections>
+                                    <action selector="close_button:" destination="lHo-ip-hok" eventType="touchUpInside" id="hrZ-H0-JXb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="safety_asset_text_background" translatesAutoresizingMaskIntoConstraints="NO" id="imn-mC-IzH">
+                                <rect key="frame" x="12" y="210" width="350" height="246"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="safety_asset_text" translatesAutoresizingMaskIntoConstraints="NO" id="XOm-dR-sxu">
+                                <rect key="frame" x="32" y="237" width="311" height="193"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kbb-J3-i7v" firstAttribute="top" secondItem="imn-mC-IzH" secondAttribute="bottom" constant="80" id="4zd-nH-Gg9"/>
+                            <constraint firstItem="tzP-jc-1TJ" firstAttribute="top" secondItem="qlM-9n-O3e" secondAttribute="top" id="AMw-ac-uF9"/>
+                            <constraint firstItem="imn-mC-IzH" firstAttribute="top" secondItem="HpO-ww-sy4" secondAttribute="top" constant="190" id="CYB-nf-Y3w"/>
+                            <constraint firstItem="imn-mC-IzH" firstAttribute="top" secondItem="c8P-5t-7bo" secondAttribute="bottom" constant="38" id="GYN-50-KqY"/>
+                            <constraint firstItem="XOm-dR-sxu" firstAttribute="leading" secondItem="HpO-ww-sy4" secondAttribute="leading" constant="32" id="ID9-UK-q2s"/>
+                            <constraint firstItem="c8P-5t-7bo" firstAttribute="leading" secondItem="HpO-ww-sy4" secondAttribute="leading" constant="102" id="M4w-ot-HiB"/>
+                            <constraint firstItem="HpO-ww-sy4" firstAttribute="bottom" secondItem="XOm-dR-sxu" secondAttribute="bottom" constant="237" id="NN7-q0-1z1"/>
+                            <constraint firstItem="imn-mC-IzH" firstAttribute="centerX" secondItem="tzP-jc-1TJ" secondAttribute="centerX" id="PKg-NX-hNc"/>
+                            <constraint firstAttribute="trailing" secondItem="tzP-jc-1TJ" secondAttribute="trailing" id="Tb8-h6-mQF"/>
+                            <constraint firstItem="XOm-dR-sxu" firstAttribute="centerX" secondItem="imn-mC-IzH" secondAttribute="centerX" id="V68-pc-E3d"/>
+                            <constraint firstItem="XOm-dR-sxu" firstAttribute="centerY" secondItem="imn-mC-IzH" secondAttribute="centerY" id="Wlt-bo-CcF"/>
+                            <constraint firstItem="tzP-jc-1TJ" firstAttribute="leading" secondItem="qlM-9n-O3e" secondAttribute="leading" id="djU-U6-puv"/>
+                            <constraint firstItem="imn-mC-IzH" firstAttribute="centerY" secondItem="tzP-jc-1TJ" secondAttribute="centerY" id="gwH-SR-jCt"/>
+                            <constraint firstItem="c8P-5t-7bo" firstAttribute="top" secondItem="HpO-ww-sy4" secondAttribute="top" constant="101" id="ha6-xa-ZOe"/>
+                            <constraint firstItem="Kbb-J3-i7v" firstAttribute="centerX" secondItem="XOm-dR-sxu" secondAttribute="centerX" id="kjb-kG-X48"/>
+                            <constraint firstItem="imn-mC-IzH" firstAttribute="leading" secondItem="HpO-ww-sy4" secondAttribute="leading" constant="12" id="moA-hF-lzh"/>
+                            <constraint firstItem="c8P-5t-7bo" firstAttribute="centerX" secondItem="imn-mC-IzH" secondAttribute="centerX" id="nto-Tb-rgA"/>
+                            <constraint firstItem="tzP-jc-1TJ" firstAttribute="bottom" secondItem="HpO-ww-sy4" secondAttribute="bottom" id="oHh-e5-0bw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HpO-ww-sy4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rtn-3d-mYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298.55072463768118" y="-220.10869565217394"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main_screen_night" width="190" height="342"/>
+        <image name="safe_frame_asset_text_1" width="744" height="163"/>
+        <image name="safety_asset_text" width="908" height="533"/>
+        <image name="safety_asset_text_background" width="992" height="747"/>
+    </resources>
+</document>
